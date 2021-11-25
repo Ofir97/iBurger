@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>iBurger</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/burger-icon.png">
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/burger-header-icon.png">
+        <h1>iBurger</h1>
+    </div>
+    <h2>Make your own burger</h2>
+
+    <div id="main-container">
+        <p id="price">Current Price: 0.99$</p>
+        <div id="order-container">
+            <div id="menu-container">
+
+                <h3>Add your favorite ingredients: </h3>
+                <p id="total-amount">total amount: 0/15</p>
+                <div><button id="reset-btn" onclick="resetAmount()">reset amount</button></div>
+
+                <table id="menu-table">
+                    <tr id="menu-tomato">
+                        <td><button onclick="removeItem(0)" id="remove-tomato-btn" class="rmv-btn" disabled>-</button></td>
+                        <td class="span-td"><span id="tomato-span"><img src="images/tomato-menu.png" class="menu-icon">Tomato</span></td>
+                        <td><button onclick="addItem(0)" id="add-tomato-btn" class="add-btn">+</button></td>
+                        <td id="tomato-amount">0</td>
+                    </tr>
+                    <tr id="menu-lettuce">
+                        <td><button onclick="removeItem(1)" id="remove-lettuce-btn" class="rmv-btn" disabled>-</button></td>
+                        <td class="span-td"><span><img src="images/lettuce-menu.jpg" class="menu-icon">Lettuce</span></td>
+                        <td><button onclick="addItem(1)" id="add-lettuce-btn" class="add-btn">+</button></td>
+                        <td id="lettuce-amount">0</td>
+                    </tr>
+                    <tr id="menu-onion">
+                        <td><button onclick="removeItem(2)" id="remove-onion-btn" class="rmv-btn" disabled>-</button></td>
+                        <td class="span-td"><span><img src="images/onion-menu.png" class="menu-icon">Onion</span></td>
+                        <td><button onclick="addItem(2)" id="add-onion-btn" class="add-btn">+</button></td>
+                        <td id="onion-amount">0</td>
+                    </tr>
+                    <tr id="menu-cheese">
+                        <td><button onclick="removeItem(3)" id="remove-cheese-btn" class="rmv-btn" disabled>-</button></td>
+                        <td class="span-td"><span><img src="images/cheese-menu.png" class="menu-icon">Cheese</span></td>
+                        <td><button onclick="addItem(3)" id="add-cheese-btn" class="add-btn">+</button></td>
+                        <td id="cheese-amount">0</td>
+                    </tr>
+                    <tr id="menu-meat">
+                        <td><button onclick="removeItem(4)" id="remove-meat-btn" class="rmv-btn" disabled>-</button></td>
+                        <td class="span-td"><span><img src="images/meat-menu.png" class="menu-icon">Meat</span></td>
+                        <td><button onclick="addItem(4)" id="add-meat-btn" class="add-btn">+</button></td>
+                        <td id="meat-amount">0</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="burger-container">
+                <div id="top"><img src="images/top-bun.png" class="burger-icon"></div>
+                <div id="tomato-container"></div>
+                <div id="lettuce-container"></div>
+                <div id="onion-container"></div>
+                <div id="cheese-container"></div>
+                <div id="meat-container"></div>
+                <div id="bottom"><img src="images/bottom-bun.png" class="burger-icon"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
