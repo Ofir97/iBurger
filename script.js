@@ -1,5 +1,3 @@
-var PORT = process.env.PORT || 5000;
-
 const items = [
     { name: 'tomato', amount: 0, price: 1.49 },
     { name: 'lettuce', amount: 0, price: 1.99 },
