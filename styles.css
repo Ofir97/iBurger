@@ -201,6 +201,15 @@ button:disabled {
         width: 80%;
     }
 
+    .span-td {
+        display: inline-block;
+        height: 25px;
+    }
+
+    .menu-icon {
+        height: 50%;
+        width: 10%;
+    }
 
 }
 
@@ -222,5 +231,11 @@ button:disabled {
 @media only screen and (max-width: 480px) {
     #menu-table {
         width: 95%;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    #menu-table {
+        width: 60%;
     }
 }
