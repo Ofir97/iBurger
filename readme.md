@@ -1,4 +1,4 @@
-# iBurger project
+# iBurger
  
 This project was created using HTML, CSS and JS. \
 It allows the user to choose his favorite ingredients for his burger. 😋
